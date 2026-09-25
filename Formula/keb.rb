@@ -1,25 +1,25 @@
 class Keb < Formula
   desc "Rename files to kebab case, safely and idempotently"
   homepage "https://github.com/frycz/keb"
-  version "0.0.1"
+  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/frycz/keb/releases/download/v0.0.1/keb-aarch64-apple-darwin.tar.xz"
-      sha256 "1cd492f2543dd2fbb4172ca29f2d7be7eb41a1fc93f0cf07184a177e9007364b"
+      url "https://github.com/frycz/keb/releases/download/v0.1.0/keb-aarch64-apple-darwin.tar.xz"
+      sha256 "60dfc21c5ab209d31d8a8db6a381a90226cfe430687ddf26e9292e6fc6ea854a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/frycz/keb/releases/download/v0.0.1/keb-x86_64-apple-darwin.tar.xz"
-      sha256 "6d4fffc70ace364c5289ac9622ce24c28323bf140d88293af3e9a6c81e66a339"
+      url "https://github.com/frycz/keb/releases/download/v0.1.0/keb-x86_64-apple-darwin.tar.xz"
+      sha256 "8b732aa41c9f47c8c7a1661b9f57684151f71a4eb6e964bde2988847791442b8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/frycz/keb/releases/download/v0.0.1/keb-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f9c0fb98674827df1c26bd43e05a33d48ac8abfb14f8e94b63aa98f999e62fbf"
+      url "https://github.com/frycz/keb/releases/download/v0.1.0/keb-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "121fea8a2971859a46178c44a99e98a160ce69624949cef5efe58368c46d7433"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/frycz/keb/releases/download/v0.0.1/keb-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1d1f74bab20d0a78b136555f3fb1fec3c1085261f86e9c92b6986f97b254b6a9"
+      url "https://github.com/frycz/keb/releases/download/v0.1.0/keb-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "64d714b0ae067f28d0f693c20bdc595d490b7ffff41c55c14cd4bcb589b84376"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
